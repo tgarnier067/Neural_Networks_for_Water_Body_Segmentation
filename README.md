@@ -48,16 +48,17 @@ _(to be completed)_
 
 - Jonnala, N. S., Siraaj, S., Prastuti, Y., Chinnababu, P., Praveen Babu, B., Bansal, S., Upadhyaya, P., Prakash, K., Faruque, M. R. I., & Al-Mugren, K. S. (2023).  
   **AER U-Net: Attention-Enhanced Multi-Scale Residual U-Net Structure for Water Body Segmentation**.  
-  *Scientific Reports*. https://doi.org/10.1038/s41598-023-34266-9
+  *Scientific Reports*. https://www.nature.com/articles/s41598-025-99322-z
 
 - Ronneberger, O., Fischer, P., & Brox, T. (2015).  
   **U-Net: Convolutional Networks for Biomedical Image Segmentation**.  
   *MICCAI 2015*. https://arxiv.org/abs/1505.04597
 
-- [Sentinel-2 Mission Overview – ESA](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
-
 - Dataset used:  
   [Satellite Images of Water Bodies on Kaggle](https://www.kaggle.com/datasets/franciscoescobar/satellite-images-of-water-bodies)
+
+- Code used :
+    U-Net code adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
 
 ---
 ## 📬 Contact
