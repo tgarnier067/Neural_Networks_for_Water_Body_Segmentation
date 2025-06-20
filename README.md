@@ -120,17 +120,25 @@ Use notebook 14, please make sur to first download the data in appropriate folde
 
 - Jonnala, N. S., Siraaj, S., Prastuti, Y., Chinnababu, P., Praveen Babu, B., Bansal, S., Upadhyaya, P., Prakash, K., Faruque, M. R. I., & Al-Mugren, K. S. (2023).  
   **AER U-Net: Attention-Enhanced Multi-Scale Residual U-Net Structure for Water Body Segmentation**.  
-  *Scientific Reports*. https://www.nature.com/articles/s41598-025-99322-z
+  _Scientific Reports_. https://www.nature.com/articles/s41598-025-99322-z
 
 - Ronneberger, O., Fischer, P., & Brox, T. (2015).  
   **U-Net: Convolutional Networks for Biomedical Image Segmentation**.  
-  *MICCAI 2015*. https://arxiv.org/abs/1505.04597
+  _MICCAI 2015_. https://arxiv.org/abs/1505.04597
+
+- Bello, I., Zoph, B., Vaswani, A., Shlens, J., & Le, Q. V. (2019).  
+  **Attention Augmented Convolutional Networks**.  
+  _Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)_, 3285–3294. :contentReference[oaicite:1]{index=1}
+
+- Hu, J., Shen, L., & Sun, G. (2018).  
+  **Squeeze-and-Excitation Networks**.  
+  _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_, 7132–7141. :contentReference[oaicite:2]{index=2}
 
 - Dataset used:  
   [Satellite Images of Water Bodies on Kaggle](https://www.kaggle.com/datasets/franciscoescobar/satellite-images-of-water-bodies)
 
-- Code used :
-    U-Net code adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
+- Code used:  
+  U-Net code adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
 
 ---
 ## 📬 Contact
