@@ -79,8 +79,6 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
 - `13_Final_Notebook.ipynb`
 
   Notebook used for replication (see replication part)
-  
-  
 
   
 ---
@@ -96,8 +94,6 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
 | AE U-Net  | 0.8314   | 0.7606    | **0.7387** | **0.7495**   | **0.5994** |
 | AER U-Net | 0.8237   | 0.7725    | 0.6855 | 0.7264   | 0.5704 |
 
----
-
 ### 🧪 SE and Residuals Inside Convolutional Blocks
 
 | Model       | Accuracy | Precision | Recall | F1 Score | IoU   |
@@ -107,7 +103,8 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
 | SE U-Net    | 0.8532   | 0.8207    | 0.7293 | 0.7723   | 0.6290 |
 | **SE-R-U-Net** | **0.8688**   | **0.8593**    | **0.7365** | **0.7932**   | **0.6572** |
 
-For the analysis of the results, please read the paper we wrote (name : ...)
+The original AER U-Net implementation did not reproduce the high performance reported in the paper, likely due to limited training time. Among all tested models, SE-R-UNet achieved the best results, confirming that combining residual connections and attention mechanisms improves segmentation performance. However, recall remained lower than precision across models, suggesting under-detection of water bodies.
+A more detailed analysis and comparison of the results is provided in the accompanying paper.
 
 ---
 
