@@ -85,10 +85,29 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
   
 ---
 
-## 📊 Results & Insights
+## 📊 Results
 
-Results and evaluation metrics comparing U-Net and AER U-Net will be summarized here.  
-_(to be completed)_
+### 🔁 AER U-Net Replication Attempt
+
+| Model     | Accuracy | Precision | Recall | F1 Score | IoU   |
+|-----------|----------|-----------|--------|----------|-------|
+| U-Net     | **0.8372**   | **0.8425**    | 0.6434 | 0.7296   | 0.5743 |
+| R-U-Net   | 0.8237   | 0.7782    | 0.6764 | 0.7237   | 0.5670 |
+| AE U-Net  | 0.8314   | 0.7606    | **0.7387** | **0.7495**   | **0.5994** |
+| AER U-Net | 0.8237   | 0.7725    | 0.6855 | 0.7264   | 0.5704 |
+
+---
+
+### 🧪 SE and Residuals Inside Convolutional Blocks
+
+| Model       | Accuracy | Precision | Recall | F1 Score | IoU   |
+|-------------|----------|-----------|--------|----------|-------|
+| U-Net       | 0.8532   | 0.8207    | 0.7293 | 0.7723   | 0.6290 |
+| R-U-Net     | 0.8072   | 0.7487    | 0.6552 | 0.6988   | 0.5371 |
+| SE U-Net    | 0.8532   | 0.8207    | 0.7293 | 0.7723   | 0.6290 |
+| **SE-R-U-Net** | **0.8688**   | **0.8593**    | **0.7365** | **0.7932**   | **0.6572** |
+
+For the analysis of the results, please read the paper we wrote (name : ...)
 
 ---
 
