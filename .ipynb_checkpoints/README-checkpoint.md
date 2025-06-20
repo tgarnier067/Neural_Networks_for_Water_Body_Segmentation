@@ -8,10 +8,9 @@ This project implements an AER (Attention-Enhanced Multi-Scale Residual) U-Net a
 📦 Dataset available on Kaggle: [Satellite Images of Water Bodies](https://www.kaggle.com/datasets/franciscoescobar/satellite-images-of-water-bodies)
 
 ---
+## 📄 Paper
 
-## Paper
-
-Please, first, read the paper that we wrote, with respect to this project (it's in the git folder, with the name ...). 
+We encourage you to first read the paper we wrote as part of this project. You can find it in this GitHub repository under the filename ...
 
 ---
 
@@ -26,61 +25,48 @@ Please, first, read the paper that we wrote, with respect to this project (it's 
 
 ### 📓 Notebooks
 
+#### 📥 Data Collection & Exploration
 - `01_Collect_data_from_Kaggle.ipynb`  
-  Downloads the dataset from Kaggle and extracts the content. Useful for the first data collection step.
+  Download and extract the dataset from Kaggle.
 
 - `02_Collect_data_from_Drive.ipynb`  
-  Alternative method to fetch data from Google Drive for easier and faster access during development.
+  Load dataset from Google Drive (faster during development).
 
 - `03_Exploration_of_data.ipynb`  
-  Data exploration and visualization: image/mask previews, size distributions, water pixel ratios, etc.
+  Data visualization: sample previews, size & pixel ratio analysis.
 
-AER UNets Models family : Applies modifications to the base U-Net by adding attention and/or residual blocks to reproduce AER models. Evaluates model performance on the dataset.
+#### 🧪 Baseline & AER Model Family
+- `07_U-Net.ipynb`  
+  Baseline U-Net.
 
-- `04_AER-U-Net.ipynb`
+- `06_R-U-Net.ipynb`  
+  U-Net + residual blocks.
 
-  Add attention and residual blocks
+- `05_AE-U-Net.ipynb`  
+  U-Net + attention blocks.
 
-- `05_AE-U-Net.ipynb`
+- `04_AER-U-Net.ipynb`  
+  U-Net + both attention and residual blocks (AER model).
 
-  Add attention blocks
+- `08_AA_AER-U-Net.ipynb`  
+  Experimental: replaces convs with Attention Augmented Convolutions (AA).
 
-- `06_R-U-Net.ipynb`
+#### 🧬 SE-based Models (Attention inside conv blocks)
+- `09_SE_U-Net.ipynb`  
+  U-Net + SE attention in conv blocks.
 
-  Add residual blocks
+- `11_R-U-Net.ipynb`  
+  U-Net + residuals in conv blocks.
 
-- `07_U-Net.ipynb`
+- `10_SE_R_U-Net.ipynb`  
+  U-Net + SE attention and residuals in conv blocks.
 
-  Baseline Model : UNet
-  
-- `08_AA_AER-U-Net.ipynb`
+#### 📊 Evaluation & Replication
+- `12_Results and Analysis.ipynb`  
+  Plots, tables, metrics, and interpretation.
 
-  Add attention aware convolution blocks, instead of simple convolution blocks
-
-SE UNets Models family : Applies modifications to the base U-Net by adding attention and/or residual blocks through convolution blocks. Evaluates model performance on the dataset.
-
-- `09_SE_U-Net.ipynb`
-
-  Add attention (SE) in convolution blocks
-
-- `10_SE_R_U-Net.ipynb`
-
-  Add attention (SE) and residual connections in convolution blocks
-
-- `11_R-U-Net.ipynb`
-
-  Add residual connections in convolution blocks
-
-
-- `12_Results and Analysis.ipynb`
-
-  Plots, tables, metrics and interpretation of the previous results
-
-- `13_Final_Notebook.ipynb`
-
-  Notebook used for replication (see replication part)
-  
-  
+- `13_Final_Notebook.ipynb`  
+  Final notebook used for replication (see 📄 Reproducibility).
 
   
 ---
@@ -96,8 +82,6 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
 | AE U-Net  | 0.8314   | 0.7606    | **0.7387** | **0.7495**   | **0.5994** |
 | AER U-Net | 0.8237   | 0.7725    | 0.6855 | 0.7264   | 0.5704 |
 
----
-
 ### 🧪 SE and Residuals Inside Convolutional Blocks
 
 | Model       | Accuracy | Precision | Recall | F1 Score | IoU   |
@@ -107,30 +91,43 @@ SE UNets Models family : Applies modifications to the base U-Net by adding atten
 | SE U-Net    | 0.8532   | 0.8207    | 0.7293 | 0.7723   | 0.6290 |
 | **SE-R-U-Net** | **0.8688**   | **0.8593**    | **0.7365** | **0.7932**   | **0.6572** |
 
-For the analysis of the results, please read the paper we wrote (name : ...)
+The original AER U-Net implementation did not reproduce the high performance reported in the paper, likely due to limited training time. Among all tested models, SE-R-UNet achieved the best results, confirming that combining residual connections and attention mechanisms improves segmentation performance. However, recall remained lower than precision across models, suggesting under-detection of water bodies.
+A more detailed analysis and comparison of the results is provided in the accompanying paper.
 
 ---
 
 ## Reproductability
 
-Use notebook 14, please make sur to first download the data in appropriate folders, or to change the file path in the code. Otherwise, ask us (see contact) for access to the drive, and run the notebook 2 before running the notebook 14.
+To reproduce our results, run notebook 13.
+Make sure the dataset is correctly downloaded and placed in the appropriate folders, or update the file paths in the code accordingly. Alternatively, you can contact us (see Contact) to request access to the preprocessed data on Google Drive. In that case, run notebook 2 first to set up the environment, then proceed to notebook 13.
+You will also need to select the model you wish to replicate by uncommenting the corresponding cell in the notebook.
 
+
+---
 
 ## 📚 References
 
 - Jonnala, N. S., Siraaj, S., Prastuti, Y., Chinnababu, P., Praveen Babu, B., Bansal, S., Upadhyaya, P., Prakash, K., Faruque, M. R. I., & Al-Mugren, K. S. (2023).  
   **AER U-Net: Attention-Enhanced Multi-Scale Residual U-Net Structure for Water Body Segmentation**.  
-  *Scientific Reports*. https://www.nature.com/articles/s41598-025-99322-z
+  _Scientific Reports_. https://www.nature.com/articles/s41598-025-99322-z
 
 - Ronneberger, O., Fischer, P., & Brox, T. (2015).  
   **U-Net: Convolutional Networks for Biomedical Image Segmentation**.  
-  *MICCAI 2015*. https://arxiv.org/abs/1505.04597
+  _MICCAI 2015_. https://arxiv.org/abs/1505.04597
+
+- Bello, I., Zoph, B., Vaswani, A., Shlens, J., & Le, Q. V. (2019).  
+  **Attention Augmented Convolutional Networks**.  
+  _Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)_, 3285–3294. :contentReference[oaicite:1]{index=1}
+
+- Hu, J., Shen, L., & Sun, G. (2018).  
+  **Squeeze-and-Excitation Networks**.  
+  _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_, 7132–7141. :contentReference[oaicite:2]{index=2}
 
 - Dataset used:  
   [Satellite Images of Water Bodies on Kaggle](https://www.kaggle.com/datasets/franciscoescobar/satellite-images-of-water-bodies)
 
-- Code used :
-    U-Net code adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
+- Code used:  
+  U-Net code adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
 
 ---
 ## 📬 Contact
