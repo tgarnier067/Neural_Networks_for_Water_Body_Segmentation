@@ -35,12 +35,54 @@ Please, first, read the paper that we wrote, with respect to this project (it's 
 - `03_Exploration_of_data.ipynb`  
   Data exploration and visualization: image/mask previews, size distributions, water pixel ratios, etc.
 
-- `04_U-Net_architecture.ipynb`  
-  Implements the baseline U-Net architecture and trains it on the dataset. Adapted from [UNet-Water-Segmentation GitHub repository](https://github.com/ThorOdinson246/UNet-Water-Segmentation).
+AER UNets Models family : Applies modifications to the base U-Net by adding attention and/or residual blocks to reproduce AER models. Evaluates model performance on the dataset.
 
-- `05_AER-U-Net.ipynb`  
-  Applies modifications to the base U-Net by adding attention and residual blocks (AER modules). Evaluates model performance on the dataset.
+- `04_AER-U-Net.ipynb`
 
+  Add attention and residual blocks
+
+- `05_AE-U-Net.ipynb`
+
+  Add attention blocks
+
+- `06_R-U-Net.ipynb`
+
+  Add residual blocks
+
+- `07_U-Net.ipynb`
+
+  Baseline Model : UNet
+  
+- `08_AA_AER-U-Net.ipynb`
+
+  Add attention aware convolution blocks, instead of simple convolution blocks
+
+SE UNets Models family : Applies modifications to the base U-Net by adding attention and/or residual blocks through convolution blocks. Evaluates model performance on the dataset.
+
+- `09_SE_U-Net.ipynb`
+
+  Add attention (SE) in convolution blocks
+
+- `10_SE_R_U-Net.ipynb`
+
+  Add attention (SE) and residual connections in convolution blocks
+
+- `11_R-U-Net.ipynb`
+
+  Add residual connections in convolution blocks
+
+
+- `12_Results and Analysis.ipynb`
+
+  Plots, tables, metrics and interpretation of the previous results
+
+- `13_Final_Notebook.ipynb`
+
+  Notebook used for replication (see replication part)
+  
+  
+
+  
 ---
 
 ## 📊 Results & Insights
