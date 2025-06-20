@@ -11,7 +11,7 @@ This project implements an AER (Attention-Enhanced Multi-Scale Residual) U-Net a
 
 ## Paper
 
-Please, first, read the paper that we wrote, with respect to this project (it's in the git folder, with the name ...)
+Please, first, read the paper that we wrote, with respect to this project (it's in the git folder, with the name ...). 
 
 ---
 
@@ -52,7 +52,8 @@ _(to be completed)_
 
 ## Reproductability
 
-Use notebook 14, please make sur to first download the data in appropriate folders, or to change the file path in the code. 
+Use notebook 14, please make sur to first download the data in appropriate folders, or to change the file path in the code. Otherwise, ask us (see contact) for access to the drive, and run the notebook 2 before running the notebook 14.
+
 
 ## 📚 References
 
