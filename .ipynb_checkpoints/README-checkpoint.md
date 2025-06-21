@@ -10,7 +10,7 @@ This project implements an AER (Attention-Enhanced Multi-Scale Residual) U-Net a
 ---
 ## 📄 Paper
 
-We encourage you to first read the paper we wrote as part of this project. You can find it in this GitHub repository under the filename Neural_Network_for_Water_Body_Segmentation_A_quick_review.pdf
+We encourage you to first read the paper we wrote as part of this project. You can find it in this GitHub repository under the filename `Neural_Network_for_Water_Body_Segmentation_A_quick_review.pdf`
 
 ---
 
