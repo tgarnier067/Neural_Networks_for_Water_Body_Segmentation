@@ -5,6 +5,10 @@ This project implements an AER (Attention-Enhanced Multi-Scale Residual) U-Net a
 > *AER U-Net: Attention-Enhanced Multi-Scale Residual U-Net Structure for Water Body Segmentation*  
 > Naga Surekha Jonnala, Shaik Siraaj, Y. Prastuti, P. Chinnababu, B. Praveen Babu, Shonak Bansal, Prashant Upadhyaya, Krishna Prakash, Mohammad Rashed Iqbal Faruque, & K. S. Al-mugren
 
+**Authors of this project:**  
+Thomas Garnier (2222721), Jamil Nassar (2224424)
+
+
 📦 Dataset available on Kaggle: [Satellite Images of Water Bodies](https://www.kaggle.com/datasets/franciscoescobar/satellite-images-of-water-bodies)
 
 ---
